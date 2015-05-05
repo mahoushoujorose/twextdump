@@ -11,8 +11,22 @@
     <style type="text/css">
         body {
             text-align: center;
-            background: #000000;
+            background: url("static/starbg2.png");
             color: #fcfcfc;
+            font-family:"rosalicious";
+        }
+        h1 {
+            font-size: 300%;
+            font-weight: normal;
+            color: #3cbcfc;
+            margin: 16 0;
+        }
+        h3 {
+            font-size: 200%;
+            font-weight: normal;
+            margin: 0 0;
+        }
+        img {
         }
         #content {
         }
@@ -21,22 +35,28 @@
             margin-left: auto;
             margin-right: auto;
         }
+        @font-face{
+            font-family: "rosalicious";
+            src: url('static/rosalicious.ttf');
+            font-smooth: never;
+            -webkit-font-smoothing : none;
+        }
     </style>
 </head>
 
 <body>
 <div id="layoutwide">
-        <div id="content">
-            <h1>twextdump</h1>
-            <h3>twitter visualizer [under construction]</h3>
-            <canvas width=512 height=256 id="canvas0"></canvas>
-            <form>
-                <input type="text" id="usernameField">
-                <input type="button" onclick="submitName()" value="go!">
-            </form>
+    <div id="content">
+        <h1>twextdump</h1>
+        <h3>twitter visualizer</h3>
+        <canvas width=1024 height=512 id="canvas0"></canvas>
+        <form>
+            <input type="text" id="usernameField">
+            <input type="button" onclick="submitName()" value="go!">
+        </form>
+        <div id="footer">
+            <p>by rose</p>
         </div>
-    <div id="footer">
-        <p>by rose</p>
     </div>
 </div>
 </body>

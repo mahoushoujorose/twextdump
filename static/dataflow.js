@@ -1,4 +1,4 @@
-var tileSize = 16; // size in pixels of each tile
+var tileSize = 32; // size in pixels of each tile
 var rows = 16;     // number of rows of tiles
 var cols = 32;     // number of columns of tiles
 var fontImageTileSize = 8;
@@ -286,7 +286,7 @@ function submitName() {
     if(username == "") {
         username = document.getElementById("usernameField").value;
         console.log("Fetching tweets for user " + username);
-        var intervalWrite = setInterval(writeFromQueue, 200);
+        var intervalWrite = setInterval(writeFromQueue, 400);
     }
 }
 
